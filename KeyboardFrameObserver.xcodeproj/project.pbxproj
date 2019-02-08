@@ -13,6 +13,7 @@
 		5604E2EE220D6ADF004C3667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5604E2ED220D6ADF004C3667 /* Assets.xcassets */; };
 		5604E2F1220D6ADF004C3667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5604E2EF220D6ADF004C3667 /* LaunchScreen.storyboard */; };
 		5604E2FC220D6AE0004C3667 /* KeyboardFrameObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5604E2FB220D6AE0004C3667 /* KeyboardFrameObserverTests.swift */; };
+		5604E307220D6AF9004C3667 /* KeyboardSizeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5604E306220D6AF9004C3667 /* KeyboardSizeObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		5604E2F7220D6AE0004C3667 /* KeyboardFrameObserverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardFrameObserverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5604E2FB220D6AE0004C3667 /* KeyboardFrameObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardFrameObserverTests.swift; sourceTree = "<group>"; };
 		5604E2FD220D6AE0004C3667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5604E306220D6AF9004C3667 /* KeyboardSizeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSizeObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				5604E2E6220D6ADE004C3667 /* AppDelegate.swift */,
 				5604E2E8220D6ADE004C3667 /* ViewController.swift */,
+				5604E306220D6AF9004C3667 /* KeyboardSizeObserver.swift */,
 				5604E2EA220D6ADE004C3667 /* Main.storyboard */,
 				5604E2ED220D6ADF004C3667 /* Assets.xcassets */,
 				5604E2EF220D6ADF004C3667 /* LaunchScreen.storyboard */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5604E2E9220D6ADE004C3667 /* ViewController.swift in Sources */,
+				5604E307220D6AF9004C3667 /* KeyboardSizeObserver.swift in Sources */,
 				5604E2E7220D6ADE004C3667 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
