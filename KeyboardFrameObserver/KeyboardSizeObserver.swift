@@ -8,20 +8,20 @@
 
 import UIKit
 
-protocol KeyboardSizeObserverDelegate: AnyObject {
+public protocol KeyboardSizeObserverDelegate: AnyObject {
     func keyboardSizeObserver(_ observer: KeyboardSizeObserver, sizeDidChangeTo size: CGSize)
 }
 
-extension KeyboardSizeObserverDelegate {
+public extension KeyboardSizeObserverDelegate {
     func keyboardSizeObserver(_ observer: KeyboardSizeObserver, sizeDidChangeTo size: CGSize) {
         // implementation is optional
     }
 }
 
-/// This class have to be instantiated before keyboard shown to track keyboard correctly.
+/// This class have to be instantiated before keyboard shown to track keyboard correctly. (You can use singleton if needed.)
 /// userInfo returns frame, but doc recommends us not to use origin, and just use size.
 /// Ref: https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html
-final class KeyboardSizeObserver: NSObject {
+public final class KeyboardSizeObserver: NSObject {
     /// Note that we have to set this property using _dispatchQueue
     public private(set) var keyboardSize: CGSize = KeyboardSizeObserver._defaultSize {
         didSet {
@@ -54,7 +54,7 @@ final class KeyboardSizeObserver: NSObject {
         height: 0
     )
     
-    override init() {
+    public override init() {
         super.init()
         
         // Though we have more notifications, since [RxKeyboard](https://github.com/RxSwiftCommunity/RxKeyboard/blob/master/Sources/RxKeyboard/RxKeyboard.swift) uses
